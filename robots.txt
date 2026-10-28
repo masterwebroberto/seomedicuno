@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Ubicación del Sitemap
+Sitemap: https://masterwebroberto.github.io/seomedicuno/sitemap.xml
