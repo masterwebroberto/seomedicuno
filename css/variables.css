@@ -1,0 +1,21 @@
+:root{
+  --ink:#0A2540;        /* texto y fondos oscuros */
+  --ink-soft:#425A70;   /* texto secundario (7:1 sobre blanco) */
+  --teal:#19D3C5;       /* acción principal (texto ink encima) */
+  --teal-deep:#007C85;  /* iconos y texto sobre claro (4.8:1) */
+  --azure:#2B59FF;      /* enlaces y foco */
+  --coral:#FF6B57;      /* estados de alerta / cancelación */
+  --mint:#EAFBF9;
+  --sky:#F3F7FF;
+  --line:#DCE6EE;
+  --white:#fff;
+  --font-display:"Bricolage Grotesque",system-ui,sans-serif;
+  --font-body:"Figtree",system-ui,sans-serif;
+  --r-sm:10px;--r-md:16px;--r-lg:28px;
+  --shadow:0 18px 40px -18px rgba(10,37,64,.35);
+  --container:1160px;
+  --header-h:72px;
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}

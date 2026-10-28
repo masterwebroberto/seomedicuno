@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Especialidades médicas | MediCare</title>
+<meta name="description" content="Explora las especialidades médicas de MediCare y encuentra a tu especialista.">
+<meta name="theme-color" content="#19D3C5">
+<meta property="og:title" content="Especialidades médicas | MediCare">
+<meta property="og:description" content="Explora las especialidades médicas de MediCare y encuentra a tu especialista.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='12' fill='%2319D3C5'/%3E%3Cpath d='M12 6v12M6 12h12' stroke='%230A2540' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="header"><div class="container header-in">
+  <a href="index.html" class="logo" aria-label="MediCare, inicio"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#007C85" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" fill="#19D3C5"/><path d="M12 7v6M9 10h6" stroke="#0A2540"/></svg><span>MediCare</span></a>
+  <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="header-nav" aria-label="Abrir menú"><svg class="ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  <div class="header-nav" id="header-nav">
+    <nav aria-label="Principal"><ul class="nav-links"><li><a href="servicios.html">Servicios</a></li><li><a href="especialidades.html" aria-current="page">Especialidades</a></li><li><a href="doctores.html">Médicos</a></li><li><a href="micuenta.html">Mi cuenta</a></li></ul></nav>
+    <form class="header-search" action="doctores.html" role="search">
+      <label class="sr-only" for="hq">Buscar médico o especialidad</label>
+      <input id="hq" name="q" type="search" placeholder="Busca médico o especialidad" autocomplete="off">
+      <button type="submit" aria-label="Buscar"><svg class="ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></button>
+    </form>
+    <div class="header-actions">
+      <button class="btn btn-primary btn-sm" data-open-booking><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 2v4M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg> Reservar cita</button>
+      <a class="btn btn-ghost btn-sm" id="acc-link" href="login.html"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> <span>Ingresar</span></a>
+    </div>
+  </div>
+</div></header>
+<main id="main">
+<div class="page-head"><div class="container"><p class="crumbs"><a href="index.html">Inicio</a> / Especialidades</p><h1>Especialidades médicas</h1></div></div>
+<section class="section"><div class="container">
+  <div class="toolbar" role="search">
+    <label class="sr-only" for="s-search">Buscar especialidad</label>
+    <input id="s-search" type="search" placeholder="Busca por nombre de especialidad" autocomplete="off">
+    <label class="sr-only" for="s-unit">Unidad médica</label>
+    <select id="s-unit"><option value="">Todas las unidades médicas</option><option>Unidad Cardiovascular</option><option>Unidad Pediátrica</option><option>Unidad Neurociencias</option><option>Unidad de Piel</option><option>Unidad Quirúrgica</option></select>
+  </div>
+  <p class="sr-only" id="s-count" aria-live="polite"></p>
+  <div class="grid g3" id="specialties-grid"><a class="card spec-card" href="especialidad-cardiologia.html" data-name="cardiologia" data-unit="Unidad Cardiovascular"><span class="spec-ico"><svg class="ico" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg></span><span><h3>Cardiología</h3><p>Diagnóstico y tratamiento de afecciones cardíacas y vasculares.</p><span class="more">Ver especialidad</span></span></a><a class="card spec-card" href="especialidad-pediatria.html" data-name="pediatria" data-unit="Unidad Pediátrica"><span class="spec-ico"><svg class="ico" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 12h.01M15 12h.01"/><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/><path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"/></svg></span><span><h3>Pediatría</h3><p>Cuidado integral de la salud del recién nacido, niños y adolescentes.</p><span class="more">Ver especialidad</span></span></a><a class="card spec-card" href="especialidad-neurologia.html" data-name="neurologia" data-unit="Unidad Neurociencias"><span class="spec-ico"><svg class="ico" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/></svg></span><span><h3>Neurología</h3><p>Tratamiento especializado de trastornos del sistema nervioso.</p><span class="more">Ver especialidad</span></span></a><a class="card spec-card" href="especialidad-dermatologia.html" data-name="dermatologia" data-unit="Unidad de Piel"><span class="spec-ico"><svg class="ico" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 17v4M17 19h4"/></svg></span><span><h3>Dermatología</h3><p>Prevención y tratamiento de enfermedades de la piel, cabello y uñas.</p><span class="more">Ver especialidad</span></span></a><a class="card spec-card" href="especialidad-cirugia-torax.html" data-name="cirugia torax y cardiovascular" data-unit="Unidad Quirúrgica"><span class="spec-ico"><svg class="ico" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span><span><h3>Cirugía Tórax y Cardiovascular</h3><p>Diagnóstico y tratamiento quirúrgico de afecciones en pulmones, pared torácica, corazón y vasos sanguíneos.</p><span class="more">Ver especialidad</span></span></a></div>
+  <p class="muted" id="no-results" hidden>No encontramos especialidades con esos datos. Prueba con otra palabra.</p>
+</div></section>
+<section class="section mint"><div class="container split">
+  <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=75" width="800" height="600" loading="lazy" alt="Médico atendiendo a un paciente">
+  <div><h2>Encuentra a tu médico</h2><p class="muted">Busca directamente por el nombre del profesional o la especialidad que necesitas.</p>
+    <a class="btn btn-dark" href="doctores.html"><svg class="ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg> Ver todos los médicos</a></div>
+</div></section>
+</main>
+<footer class="footer"><div class="container">
+  <div class="footer-grid">
+    <div><p class="logo" style="color:#fff"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#007C85" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" fill="#19D3C5"/><path d="M12 7v6M9 10h6" stroke="#0A2540"/></svg><span>MediCare</span></p><p>Reserva y gestiona tus citas médicas en línea, de forma simple y segura.</p></div>
+    <div><h2>Explora</h2><ul><li><a href="servicios.html">Servicios</a></li><li><a href="especialidades.html">Especialidades</a></li><li><a href="doctores.html">Médicos</a></li><li><a href="micuenta.html">Mi cuenta</a></li></ul></div>
+    <div><h2>Cuenta</h2><ul><li><a href="login.html">Iniciar sesión</a></li><li><a href="micuenta.html#citas">Mis citas e historial</a></li></ul></div>
+  </div>
+  <small>&copy; 2026 MediCare Perú. Proyecto de demostración: no reemplaza una consulta médica. En una emergencia, llama al 106 (SAMU).</small>
+</div></footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<dialog id="booking" aria-labelledby="bk-title"><form class="dlg form" id="bk-form" novalidate>
+  <button type="button" class="dlg-close" id="bk-close" aria-label="Cerrar"><svg class="ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <h2 id="bk-title">Reserva tu cita</h2>
+  <div class="row"><label for="bk-doc">Médico</label><select id="bk-doc" required><option value="carlos-mendoza" data-name="Dr. Carlos Mendoza" data-spec="Cardiología" data-sede="Sede Central" data-price="180">Dr. Carlos Mendoza · Cardiología</option><option value="ana-torres" data-name="Dra. Ana Torres" data-spec="Pediatría" data-sede="Sede Norte" data-price="150">Dra. Ana Torres · Pediatría</option><option value="mario-ramirez" data-name="Dr. Mario Ramírez" data-spec="Cirugía Tórax y Cardiovascular" data-sede="Sede Central" data-price="200">Dr. Mario Ramírez · Cirugía Tórax y Cardiovascular</option></select></div>
+  <div class="row"><label for="bk-date">Fecha</label><input type="date" id="bk-date" required></div>
+  <div class="row"><label for="bk-time">Hora disponible</label><select id="bk-time" required></select></div>
+  <div class="row"><label for="bk-mode">Modalidad</label><select id="bk-mode"><option>Presencial</option><option>Virtual</option></select></div>
+  <div class="dlg-total"><span>Costo de la consulta</span><span id="bk-price"></span></div>
+  <p class="note" id="bk-err" role="alert" style="color:#A8321F;min-height:1.2em"></p>
+  <button class="btn btn-primary btn-block" type="submit">Confirmar cita</button>
+  <p class="note" style="margin:.8rem 0 0">Demostración: no se realiza ningún cobro.</p>
+</form></dialog>
+<script src="js/app.js" defer></script>
+</body>
+</html>
